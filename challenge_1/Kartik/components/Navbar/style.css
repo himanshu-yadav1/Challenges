@@ -1,0 +1,106 @@
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    position: relative;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    width: max-content;
+    padding: 12px 25px;
+}
+.logo img{
+    object-fit: cover;
+}
+.navbar-items{
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+}
+.navbar-items .nav-list{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+.navbar-items .nav-list li{
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+}
+.navbar-items .nav-list li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-items .nav-list li a::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    border-bottom: 3px solid rgb(6, 177, 6);
+    padding: 4px;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+} 
+.navbar-items .nav-list li a:hover{
+    color:rgb(255,109,8);
+}
+.navbar-items .nav-list li a:hover:after{
+    width: 93%;
+    visibility: inherit;
+}
+
+@media (width <= 900px) {
+    .navbar-items{
+        padding-right: 30px;
+    }
+    .navbar-items .nav-list{
+        gap: 35px;  
+    }
+    .navbar-items ul li a{
+        font-size: 15px;
+    }
+}
+@media (width <= 650px) {
+    .navbar{
+        height: 90px;
+    }
+    .navbar-items .nav-list{
+        gap: 25px;
+    }
+    .navbar-items .nav-list li a{
+        font-size: 13px;
+    }
+    .logo img{
+        width: 75px;
+    }
+}
+
+@media (width <= 500px) {
+    .navbar{
+        width: 119vw;
+    }
+}
+
+@media (width <= 400px) {
+    .navbar{
+        width: 120vw;
+    }
+}
+@media (width <= 391px) {
+    .navbar{
+        width: 124vw;
+    }
+    .navbar-items .nav-list{
+        gap: 15px;
+    }
+    .navbar-items .nav-list li a{
+        font-size: 11.6px;
+    }
+}
