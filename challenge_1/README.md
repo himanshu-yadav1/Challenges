@@ -1,1 +1,1 @@
-Design a Responsive Navbar
+Design a Responsive Navbar and footer
