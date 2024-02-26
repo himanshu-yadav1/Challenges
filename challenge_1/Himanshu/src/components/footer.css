@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.first-row{
+    background-color: rgb(225, 225, 225);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    gap: 2em;
+    border-bottom: 0.5px solid gray;
+}
+
+.first-row p{
+    font-size: x-large;
+    color: rgb(65, 65, 65);
+}
+
+.social-icons{
+    font-size: x-large;
+}
+
+.icons {
+    cursor: pointer;
+    margin: 0 1vw;
+}
+
+@media (max-width: 750px) {
+    .first-row{
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .first-row p{
+        font-size: 5vw;
+        margin: 0 auto;
+    }
+
+    .social-icons{
+        font-size: 6vw;
+        margin: 0 auto;
+    }
+
+    .icons{
+        margin: 0 3vw;
+    }
+}
+
+.second-row{
+    display: flex;
+    gap: 5vw;
+}
+
+@media (min-width: 750px) {
+    .second-row{
+        background-color: whitesmoke;
+        padding: 30px;
+    }
+
+    .second-row-brand-area{
+        width: 50%;
+    }
+
+    .second-row-brand-area h2{
+        font-size: xx-large;
+    }
+
+    .second-row-brand-area p{
+        margin-top: 3vh;
+        font-size: larger;
+    }
+
+
+    .second-row-info-area{
+        width: 18%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+    }
+
+    .second-row-info-area h2{
+        font-size: xx-large; 
+    }
+
+    .second-row-info-area .footer-links{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3vh;
+        font-size: larger;
+    }
+
+    .second-row-info-area .footer-link{
+        margin-bottom: 2vh;
+    }
+
+    .second-row-info-area .footer-link:hover{
+        color: rgb(104, 104, 104);
+    }
+
+    .second-row-contact-area{
+        width: 18%;
+    }
+
+    .second-row-contact-area h2{
+        font-size: xx-large;
+    }
+
+    .second-row-contact-area .contacts{
+        margin-top: 3vh;
+        font-size: larger;
+
+    }
+
+    .second-row-contact-area .contacts p{
+        display: flex;
+        gap: 1vw;
+        margin-bottom: 2vh;
+    }
+
+}
+
+
+@media (max-width: 750px){
+    .second-row{
+        background-color: whitesmoke;
+        flex-direction: column;
+        text-align: center;
+        gap: 4vh;
+        padding-top: 4vh;
+        padding-bottom: 2vh;
+    }
+
+    .second-row-brand-area{
+        font-size: 5vw;
+        padding: 0 3vw;
+    }
+
+    .second-row-brand-area p{
+        margin: 0 5vw;
+        text-align: justify;
+        margin-top: 2vh;
+        font-size: 4vw;
+        color: rgb(46, 46, 46);
+    }
+
+    .second-row-info-area{
+        font-size: 5vw;
+    }
+
+    .second-row-info-area .footer-links{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vh;
+        align-items: self-start;
+        align-items: center;
+    }
+
+    .second-row-info-area .footer-link{
+        margin-bottom: 5px;
+    }
+
+    .second-row-contact-area{
+        font-size: 5vw;
+    }
+
+    .second-row-contact-area .contacts{
+        margin-top: 2vh;
+    }
+
+    .second-row-contact-area .contacts p{
+        display: flex;
+        justify-content: start;
+        margin-left: 23vw;
+        margin-bottom: 5px;
+        gap: 3vw;
+    }
+
+    .third-row{
+        font-size: 4vw;
+    }
+
+}
+
+
+.third-row{
+    background-color: rgb(212, 233, 254);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
